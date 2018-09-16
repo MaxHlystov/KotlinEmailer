@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="previewTextSize">24sp</dimen>
+    <dimen name="buttonTextSize">24sp</dimen>
+    <dimen name="normalText">24sp</dimen>
+    <dimen name="zeroSize">0dp</dimen>
+    <dimen name="lineThickness">1px</dimen>
+    <dimen name="linePadding">2dp</dimen>
+</resources>

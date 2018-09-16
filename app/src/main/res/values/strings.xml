@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Emailer</string>
+    <string name="type_your_message_here">Type your message here...</string>
+    <string name="preview">PREVIEW</string>
+    <string name="NoEmail">No email app found.</string>
+    <string name="HelloSubject">Hello</string>
+    <string name="SendMail">Send mail...</string>
+    <string name="email">EMAIL</string>
+</resources>

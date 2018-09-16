@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textPreview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zeroSize"
+        android:layout_weight="1"
+        android:textSize="@dimen/previewTextSize"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        android:gravity="center"/>
+    <View style="@style/Divider"/>
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="@dimen/buttonTextSize"/>
+</LinearLayout>

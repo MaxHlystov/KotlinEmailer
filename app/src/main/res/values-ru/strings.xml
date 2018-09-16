@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Почтовик</string>
+    <string name="type_your_message_here">Введите сообщение ...</string>
+    <string name="preview">ПРЕДПРОСМОТР</string>
+    <string name="NoEmail">Не найдено почтового приложения</string>
+    <string name="HelloSubject">Привет</string>
+    <string name="SendMail">Отослать...</string>
+    <string name="email">ОТПРАВИТЬ</string>
+</resources>
