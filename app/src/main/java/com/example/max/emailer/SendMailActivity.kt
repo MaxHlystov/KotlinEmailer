@@ -12,7 +12,7 @@ class SendMailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.send_mail_activity)
-        val msg: String = intent.getStringExtra(MSG_TEXT_1)
+        val msg: String = intent.getStringExtra(SEND_EMAIL)
         textPreview.text = msg
         btn_email.setOnClickListener {
             val i = getMailIntent(getString(R.string.HelloSubject), msg)
@@ -25,20 +25,18 @@ class SendMailActivity : AppCompatActivity() {
     }
 
     companion object {
-        private val MSG_TEXT_1 = "MSG_TEXT_1"
+        private val SEND_EMAIL = "SEND_EMAIL"
 
         fun startActivity(parent: Activity, msg: String) {
             val i = Intent(parent, SendMailActivity::class.java)
-            i.putExtra(MSG_TEXT_1, msg)
+            i.putExtra(SEND_EMAIL, msg)
             parent.startActivity(i)
         }
 
         private fun getMailIntent(subject: String, msg: String): Intent {
             val i = Intent(Intent.ACTION_SENDTO)
-            i.data = Uri.parse("mailto:")
-            i.type = "text/plain"
-            i.putExtra(Intent.EXTRA_TEXT, msg)
-            i.putExtra(Intent.EXTRA_SUBJECT, subject)
+            val mailto = "mailto:?subject=$subject&body=$msg"
+            i.data = Uri.parse(mailto)
             return i
         }
     }
