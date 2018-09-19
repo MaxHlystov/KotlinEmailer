@@ -16,8 +16,8 @@ class SendMailActivity : AppCompatActivity() {
         textPreview.text = msg
         btn_email.setOnClickListener {
             val i = Intent(Intent.ACTION_SEND)
-            //i.data = Uri.parse("mailto:")
-            i.setType("text/plain");
+            i.data = Uri.parse("mailto:")
+            //i.setType("text/plain");
             i.putExtra(Intent.EXTRA_TEXT, msg)
             i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.HelloSubject))
             if(i.resolveActivity(packageManager) != null) {
