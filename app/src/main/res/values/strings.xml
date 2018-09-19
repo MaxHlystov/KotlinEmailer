@@ -6,4 +6,5 @@
     <string name="HelloSubject">Hello</string>
     <string name="SendMail">Send mail...</string>
     <string name="email">EMAIL</string>
+    <string name="NothinToPreview">Nothing to preview</string>
 </resources>

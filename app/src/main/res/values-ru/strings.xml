@@ -7,4 +7,5 @@
     <string name="HelloSubject">Привет</string>
     <string name="SendMail">Отослать...</string>
     <string name="email">ОТПРАВИТЬ</string>
+    <string name="NothinToPreview">Введите сообщение</string>
 </resources>

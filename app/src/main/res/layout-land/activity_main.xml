@@ -16,7 +16,7 @@
         android:textSize="@dimen/normalText"
         android:inputType="text"
         android:background="@drawable/black"/>
-    <View style="@style/Divider"/>
+    <include layout="@layout/line_layout"/>
     <Button
         android:id="@+id/btn_preview"
         android:layout_width="match_parent"

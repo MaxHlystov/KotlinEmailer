@@ -13,7 +13,7 @@
         android:text=""
         android:textAlignment="center"
         android:gravity="center"/>
-    <View style="@style/Divider"/>
+    <include layout="@layout/line_layout"></include>
     <Button
         android:id="@+id/btn_email"
         android:layout_width="match_parent"
