@@ -12,6 +12,7 @@
         android:layout_height="@dimen/zeroSize"
         android:layout_weight="2"
         android:text=""
+        tools:text="Test message"
         android:hint="@string/type_your_message_here"
         android:textSize="@dimen/normalText"
         android:inputType="text"
